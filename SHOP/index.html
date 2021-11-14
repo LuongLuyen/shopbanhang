@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="assets/fonts/roboto/Roboto-Black.ttf">
+    </head>
+
+    <body>
+        <!-- block element modifier -->
+        <div class="app">
+            <header class="header">
+                <div class="grid">
+                    <nav class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separa">
+                                Shop Bán Hàng DEMO 
+
+                                <!-- Đầu QR code -->
+                                <div class="header__qr">
+                                    <img src="./assets/img/qr_code.png" alt="QR code" class="header__qr-">
+                                    <div class="header__qr-apps">
+                                        <a href="" class="header__qr-link">
+                                            <img src="./assets/img/chplay.png" alt="Google Play" class="header__qr-download-img">
+                                        </a>
+                                        <a href="" class="hearder__qr-link">
+                                            <img src="./assets/img/appstore.png" alt="AppStore" class="header__qr-download-img">
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__navbar-item">
+                                <spam class="header__navbar-title--no-pointer">Kết nối</spam>
+                                <a href="" class="header__navbar-icon-link">
+                                    <i class="header__navbar-icon fab fa-facebook-square"></i></a>
+                                <a href="" class="header__navbar-icon-link">
+                                    <i class="header__navbar-icon fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item header__navbar-item--has-notify">
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon fas fa-bell"></i>
+                                    Thông báo
+                                </a>
+                                <div class="header__notify">
+                                    <header class="header__notify-header">
+                                        <h3>Thông báo mới nhận</h3>
+                                    </header>
+                                    <ul class="header__navbar-list"> 
+                                        <!-- notify(thong bao) -->
+                                        <li class="header__notify-item header__notify-item--viewed">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://i.ytimg.com/vi/X-UFgwX8R0c/maxresdefault.jpg" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <spam class="header__notify-name">Sản phẩm 1</spam>
+                                                    <spam class="header__notify-descriotion">Mô tả sản phẩm 1</spam>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--viewed">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://i.ytimg.com/vi/X-UFgwX8R0c/maxresdefault.jpg" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <spam class="header__notify-name">Sản phẩm 2</spam>
+                                                    <spam class="header__notify-descriotion">Mô tả sản phẩm 2</spam>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--viewed">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://i.ytimg.com/vi/X-UFgwX8R0c/maxresdefault.jpg" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <spam class="header__notify-name">Sản phẩm 3</spam>
+                                                    <spam class="header__notify-descriotion">Mô tả sản phẩm 3</spam>
+                                                </div>
+                                        </a>
+                                    </ul>
+                                    <footer class="header__notify-footer">
+                                        <a href="" class="header__notify-footer-">Xem tất cả</a>
+
+                                    </footer>
+                                </div>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon fas fa-question-circle"></i>
+                                    Trợ giúp
+                                </a>
+                            </li>
+                            <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separa">Đăng ký</li>
+                            <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                        </ul>  
+                    </nav>
+                    <!-- header with search -->
+                    <div class="header-with-search">
+                        <div class="header__logo">
+                            <img src="./assets/img/bird-2069828.svg" alt="logo">
+                        </div>
+                        <div class="header__search">
+                            <div class="header__search-input-wrap">
+                                <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">alooooooooooo</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">olaaaaaaaaaaa</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                             
+                        </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fas fa-search"></i>
+                            </button>
+                        <div class="header__cart">
+                            <i class="header__cart-icon fas fa-cart-arrow-down"></i>
+                        </div>
+                    </div>
+                </div>       
+            </header>
+
+            <div class="container">
+
+            </div>
+
+            <footer class="footer">
+
+            </footer>
+        </div>
+        <!-- modal layout -->
+        <!-- <div class="modal"> -->
+            <!-- <div class="modal__overlay"></div> -->
+            <!-- <div class="modal__body"> -->
+                <!-- authen form -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <spam class="auth-form__switch-btn">Đăng nhập</spam>
+                        </div>
+                        <div class="autn-form__">
+                            <div class="auth-form__">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+                            </div>
+                            <div class="auth-form__">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng ký, bạn đã đồng ý với shop về
+                                <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a>&
+                                <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn">Trở lại</button>
+                            <button class="btn btn--primry">Đăng ký</button>
+                        </div>
+                        <div class="auth-form__socials">
+                            <a href="" class="btn btn--with-icon">
+                                <i class="fab fa-facebook-square"></i>
+                                Kết nối với facebook
+                            </a>
+                            <a href="" class="btn btn--with-icon">
+                                <i class="fab fa-google"></i> 
+                                Kết nối với Google
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- login form -->
+                <!-- <div class="auth-form"> 
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <spam class="auth-form__switch-btn">Đăng ký</spam>
+                        </div>
+                        <div class="autn-form__">
+                            <div class="auth-form__">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                           <div class="auth-form__">
+                              <a href="" class="auth-form__help-link">Quên mật khẩu</a>
+                              <a href="" class="auth-form__help-link">Cần trợ giúp?</a>   
+                           </div>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn">Trở lại</button>
+                            <button class="btn btn--primry">Đăng nhập</button>
+                        </div>
+                        <div class="auth-form__socials">
+                            <a href="" class="btn btn--with-icon">
+                                <i class="fab fa-facebook-square"></i>
+                                Đăng nhập Facebook
+                            </a>
+                            <a href="" class="btn btn--with-icon">
+                                <i class="fab fa-google"></i> 
+                                Đăng nhập Google
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+        <!-- </div>  -->
+    </body>
+</html>
