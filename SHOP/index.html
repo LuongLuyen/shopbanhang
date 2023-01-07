@@ -4,20 +4,22 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>🌺Luong Luyen🌺</title>
         <link rel="stylesheet" href="./assets/css/base.css">
         <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/grid.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+        <!-- Tiêu chuẩn  web html5 -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
-        <link rel="stylesheet" href="assets/fonts/roboto/Roboto-Black.ttf">
+        <link rel="stylesheet" href="./assets/fonts/roboto/Roboto-Black.ttf">
     </head>
-
     <body>
-        <!-- block element modifier -->
+        <!-- block element modifier --> 
         <div class="app">
             <header class="header">
-                <div class="grid">
-                    <nav class="header__navbar">
+                <div class="grid wide">
+                    <nav class="header__navbar hide-on-mobile-tablet">
                         <ul class="header__navbar-list">
                             <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separa">
                                 Shop Bán Hàng DEMO 
@@ -48,43 +50,46 @@
                             <li class="header__navbar-item header__navbar-item--has-notify">
                                 <a href="" class="header__navbar-item-link">
                                     <i class="header__navbar-icon fas fa-bell"></i>
-                                    Thông báo
-                                </a>
+                                    Thông báo 
+                                </a> 
                                 <div class="header__notify">
                                     <header class="header__notify-header">
                                         <h3>Thông báo mới nhận</h3>
                                     </header>
                                     <ul class="header__navbar-list"> 
                                         <!-- notify(thong bao) -->
-                                        <li class="header__notify-item header__notify-item--viewed">
-                                            <a href="" class="header__notify-link">
-                                                <img src="https://i.ytimg.com/vi/X-UFgwX8R0c/maxresdefault.jpg" alt="" class="header__notify-img">
-                                                <div class="header__notify-info">
-                                                    <spam class="header__notify-name">Sản phẩm 1</spam>
-                                                    <spam class="header__notify-descriotion">Mô tả sản phẩm 1</spam>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="header__notify-item header__notify-item--viewed">
-                                            <a href="" class="header__notify-link">
-                                                <img src="https://i.ytimg.com/vi/X-UFgwX8R0c/maxresdefault.jpg" alt="" class="header__notify-img">
-                                                <div class="header__notify-info">
-                                                    <spam class="header__notify-name">Sản phẩm 2</spam>
-                                                    <spam class="header__notify-descriotion">Mô tả sản phẩm 2</spam>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="header__notify-item header__notify-item--viewed">
-                                            <a href="" class="header__notify-link">
-                                                <img src="https://i.ytimg.com/vi/X-UFgwX8R0c/maxresdefault.jpg" alt="" class="header__notify-img">
-                                                <div class="header__notify-info">
-                                                    <spam class="header__notify-name">Sản phẩm 3</spam>
-                                                    <spam class="header__notify-descriotion">Mô tả sản phẩm 3</spam>
-                                                </div>
-                                        </a>
+                                        <div class="header__notify-a">
+                                            <li class="header__notify-item header__notify-item--viewed">
+                                                <a href="" class="header__notify-link">
+                                                    <img src="https://i.ytimg.com/vi/X-UFgwX8R0c/maxresdefault.jpg" alt="" class="header__notify-img">
+                                                    <div class="header__notify-info">
+                                                        <spam class="header__notify-name">Sản phẩm 1</spam>
+                                                        <spam class="header__notify-descriotion">Mô tả sản phẩm 1</spam>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="header__notify-item header__notify-item--viewed">
+                                                <a href="" class="header__notify-link">
+                                                    <img src="https://i.ytimg.com/vi/X-UFgwX8R0c/maxresdefault.jpg" alt="" class="header__notify-img">
+                                                    <div class="header__notify-info">
+                                                        <spam class="header__notify-name">Sản phẩm 2</spam>
+                                                        <spam class="header__notify-descriotion">Mô tả sản phẩm 2</spam>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="header__notify-item header__notify-item--viewed">
+                                                <a href="" class="header__notify-link">
+                                                    <img src="https://i.ytimg.com/vi/X-UFgwX8R0c/maxresdefault.jpg" alt="" class="header__notify-img">
+                                                    <div class="header__notify-info">
+                                                        <spam class="header__notify-name">Sản phẩm 3</spam>
+                                                        <spam class="header__notify-descriotion">Mô tả sản phẩm 3</spam>
+                                                    </div>
+                                                </a>
+                                            </li> 
+                                        </div> 
                                     </ul>
                                     <footer class="header__notify-footer">
-                                        <a href="" class="header__notify-footer-">Xem tất cả</a>
+                                        <a href="" class="header__notify-footer-btn">Xem tất cả</a>
 
                                     </footer>
                                 </div>
@@ -95,15 +100,33 @@
                                     Trợ giúp
                                 </a>
                             </li>
-                            <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separa">Đăng ký</li>
-                            <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                            <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separa">Đăng ký</li>
+                            <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+                            <li class="header__navbar-item header__navbar-user">
+                                <img src="./assets/img/a.jpg" alt="" class="header__navbar-user-img">
+                                <spam class="header__navbar-user-name">Lương Luyện</spam>
+
+                                <ul class="header__navbar-user-menu">
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Tài khoản của tôi</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Địa chỉ của tôi</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Đăng xuất</a>
+                                    </li>
+
+                                </ul>
+                            </li>
                         </ul>  
                     </nav>
                     <!-- header with search -->
                     <div class="header-with-search">
                         <div class="header__logo">
-                            <img src="./assets/img/bird-2069828.svg" alt="logo">
+                            <img src="./assets/img/animal-1817643.svg" alt="logo">
                         </div>
+                        <!-- history search -->
                         <div class="header__search">
                             <div class="header__search-input-wrap">
                                 <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
@@ -118,31 +141,547 @@
                                         </li>
                                     </ul>
                                 </div>
+                                <button class="header__search-btn">
+                                    <i class="header__search-btn-icon fas fa-search"></i>
+                                </button>
                             </div>
-                             
-                        </div>
-                            <button class="header__search-btn">
-                                <i class="header__search-btn-icon fas fa-search"></i>
-                            </button>
+                        </div> 
+                          <!-- cart -->
                         <div class="header__cart">
                             <i class="header__cart-icon fas fa-cart-arrow-down"></i>
+                            <spam class="header__cart-notice">3</spam>
+                            <!-- NO cart :class="header__cart-list header__cart-list--no-cart"-->
+                            <div class="header__cart-list">
+                                <img src="./assets/img/no-cart.png" alt="" class="header__cart-no-cart-img">
+                                <spam class="header__cart-list-no-cart-msg">
+                                    Chưa có sản phẩm
+                                </spam>
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <!-- cart-item -->
+                                    <li class="header__cart-item">
+                                        <img src="https://gamek.mediacdn.vn/133514250583805952/2020/7/15/photo-1-1594753673987195886596.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Sản phẩm m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <spam class="header__cart-item-price">2.000.000đ</spam>
+                                                    <spam class="header__cart-item-multiply">x</spam>
+                                                    <spam class="header__cart-item-qnt">2</spam>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <spam class="header__cart-item-description">
+                                                    Phân loại: Bạc
+                                                </spam>
+                                                <spam class="header__cart-item-remove">Xóa</spam>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://gamek.mediacdn.vn/133514250583805952/2020/7/15/photo-1-1594753673987195886596.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Sản phẩm m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m m</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <spam class="header__cart-item-price">2.000.000đ</spam>
+                                                    <spam class="header__cart-item-multiply">x</spam>
+                                                    <spam class="header__cart-item-qnt">2</spam>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <spam class="header__cart-item-description">
+                                                    Phân loại: Bạc
+                                                </spam>
+                                                <spam class="header__cart-item-remove">Xóa</spam>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://gamek.mediacdn.vn/133514250583805952/2020/7/15/photo-1-1594753673987195886596.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Sản phẩm</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <spam class="header__cart-item-price">2.000.000đ</spam>
+                                                    <spam class="header__cart-item-multiply">x</spam>
+                                                    <spam class="header__cart-item-qnt">2</spam>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <spam class="header__cart-item-description">
+                                                    Phân loại: Bạc
+                                                </spam>
+                                                <spam class="header__cart-item-remove">Xóa</spam>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                <button class="btn btn--primary">Xem giỏ hàng</button>
+                            </div> 
                         </div>
                     </div>
-                </div>       
+                </div> 
+                <ul class="header__sort-bar">
+                    <li class="header__sort-item">
+                        <a href="" class="header__sort-link">Liên quan</a></li>
+                    <li class="header__sort-item">
+                        <a href="" class="header__sort-link">Mới nhất</a></li>
+                    <li class="header__sort-item">
+                        <a href="" class="header__sort-link">Bán chạy</a></li>
+                    <li class="header__sort-item">
+                        <a href="" class="header__sort-link">Giá</a></li> 
+                </ul> 
+                   
             </header>
+            <div class="app__container">
+                <div class="grid wide">
+                    <div class="row sm-gutter app__content">
+                        <div class="col l-2 m-0 c-0">
+                            <nav class="category">
+                                <h3 class="category__heading">
+                                    <i class="category__heading-icon fas fa-list"></i>
+                                    Danh Mục
+                                </h3>
+                                <ul class="category-list">
+                                    <li class="category-item category-item--active">
+                                        <a href="#" class="category-item__link">Sản Phẩm</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">Sản Phẩm</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">Sản Phẩm</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">Sản Phẩm</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">Sản Phẩm</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">Sản Phẩm</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">Sản Phẩm</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">Sản Phẩm</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">Sản Phẩm</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">Sản Phẩm</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">Sản Phẩm</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">Sản Phẩm</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">Sản Phẩm</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col l-10 m-12 c-12">
+                            <div class="home-filter hide-on-mobile-tablet">
+                                <spam class="home-filter__label">Sắp xếp theo</spam>
+                                <button class="home-filter__btn btn">Phổ biến</button>
+                                <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                                <button class="home-filter__btn btn">Bán chạy</button>
+                                <div class="select-input">
+                                    <spam class="select-input__label">Giá</spam>
+                                    <i class="select-input__icon fas fa-angle-down"></i>
+                                    <ul class="select-input__list">
+                                        <li class="select-input__item">
+                                            <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+                                            
+                                        </li>
+                                        <li class="select-input__item">
+                                            
+                                            <a href="" class="select-input__link">Giá: Cao đến thấp</a>
+                                        </li>
+                                    </ul>
 
-            <div class="container">
+                                </div>
+                                <div class="home-filter__page">
+                                    <spam class="home-filter__page-num">
+                                        <spam class="home-filter__page-curent">1</spam>/14
+                                    </spam>
+                                    <div class="home-filter__page-control">
+                                        <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                            <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                        </a>
+                                        <a href="" class="home-filter__page-btn">
+                                            <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-product">
+                                <div class="row sm-gutter">
+                                    <!-- product item  san pham-->
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/2db2dbb68cecca9f156096b22f3b12d5_tn);"></div>
+                                            <h4 class="home-product-item__name">Áo hoodie i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">1.200.000đ</span>
+                                                <span class="home-product-item__price-current">999.999đ</span>
 
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- bo home-product-item__like--liked hien tim rỗng -->
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i> 
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">999 Đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Xuất Sứ</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/6a9e1afda2a74c5883c7e84f9e36eb5d);"></div>
+                                            <h4 class="home-product-item__name">Apple iPhone 12 64GB Chính hãng VN/A</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">1.200.000đ</span>
+                                                <span class="home-product-item__price-current">999.999đ</span>
+
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- bo home-product-item__like--liked hien tim rỗng -->
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i> 
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">999 Đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Xuất Sứ</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/069aca7d8a5d5d1549417b46229758e5);"></div>
+                                            <h4 class="home-product-item__name">Apple iPhone 13 Pro Max 128GB</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">1.200.000đ</span>
+                                                <span class="home-product-item__price-current">999.999đ</span>
+
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- bo home-product-item__like--liked hien tim rỗng -->
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i> 
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">999 Đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Xuất Sứ</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/9f922fd322f373cf0663423e799e82b0);"></div>
+                                            <h4 class="home-product-item__name">Điện thoại iP XS Max 256GB bảo hành 12 tháng</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">1.200.000đ</span>
+                                                <span class="home-product-item__price-current">999.999đ</span>
+
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- bo home-product-item__like--liked hien tim rỗng -->
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i> 
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">999 Đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Xuất Sứ</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/460e4c3e2c68da58a82a05297531c486);"></div>
+                                            <h4 class="home-product-item__name">[Mã LIFEXANH03 giảm 10% đơn 500K] Mũ Bảo Hiểm giá xưởng Nửa Đầu 1/2 Nhiều Tem Siêu HOT - Hàng Cao Cấp</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">1.200.000đ</span>
+                                                <span class="home-product-item__price-current">999.999đ</span>
+
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- bo home-product-item__like--liked hien tim rỗng -->
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i> 
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">999 Đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Xuất Sứ</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/fc4b84be122837c1cfa0e43c77df3ea4);"></div>
+                                            <h4 class="home-product-item__name">[Mã FAMARAL2 giảm 10K đơn 50K] Áo thun unisex form rộng nam nữ freesize phiên bản giới hạn HK86</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">1.200.000đ</span>
+                                                <span class="home-product-item__price-current">999.999đ</span>
+
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- bo home-product-item__like--liked hien tim rỗng -->
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i> 
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">999 Đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Xuất Sứ</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/99d4bba00bd0c11fc25b3194fa30862d);"></div>
+                                            <h4 class="home-product-item__name">Áo thun nam nữ form rộng Cô gái Aothunxinhz , áo phông unisex tay lỡ oversize phong cách teen năng động</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">1.200.000đ</span>
+                                                <span class="home-product-item__price-current">999.999đ</span>
+
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- bo home-product-item__like--liked hien tim rỗng -->
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i> 
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">999 Đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Xuất Sứ</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/45d690bb223e8099efa7772b20d6fb73);"></div>
+                                            <h4 class="home-product-item__name">Giày Jordan cổ thấp màu xanh ngọc nam nữ, Giày Jordan 1 low đen kẻ xanh dương bản đẹp full box bill</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">1.200.000đ</span>
+                                                <span class="home-product-item__price-current">999.999đ</span>
+
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- bo home-product-item__like--liked hien tim rỗng -->
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i> 
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">999 Đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Xuất Sứ</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/58c9085868c00744dc95349bbcc85b15);"></div>
+                                            <h4 class="home-product-item__name">[Mã CBSD183I giảm 10K đơn 0K] Mắt Kính Gọng Lớn Chống Ánh Sáng Xanh Phong Cách Retro Cho Nữ</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">1.200.000đ</span>
+                                                <span class="home-product-item__price-current">999.999đ</span>
+
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <!-- bo home-product-item__like--liked hien tim rỗng -->
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i> 
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">999 Đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Xuất Sứ</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
             <footer class="footer">
 
             </footer>
         </div>
         <!-- modal layout -->
-        <!-- <div class="modal"> -->
-            <!-- <div class="modal__overlay"></div> -->
-            <!-- <div class="modal__body"> -->
+        <!-- <div class="modal">  -->
+            <!-- <div class="modal__overlay"></div>  -->
+            <!-- <div class="modal__body">  -->
                 <!-- authen form -->
                 <!-- <div class="auth-form">
                     <div class="auth-form__container">
@@ -221,7 +760,7 @@
                         </div>
                     </div>
                 </div> -->
-            <!-- </div> -->
+            <!-- </div>  -->
         <!-- </div>  -->
     </body>
 </html>
